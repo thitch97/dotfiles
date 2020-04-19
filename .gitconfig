@@ -1,0 +1,16 @@
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+[core]
+	editor = nvim
+[push]
+	default = simple
+[diff]
+	indentHeuristic = true
+[url "git@github.com:"]
+	pushInsteadOf = https://github.com/
+[user]
+	email = thitchener97@gmail.com
+	name = Timothy Hitchener
