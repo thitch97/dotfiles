@@ -14,7 +14,6 @@ brew 'wget'
 brew 'yq'
 
 cask 'docker'
-cask 'flycut'
 cask 'brave'
 cask 'iterm2'
 

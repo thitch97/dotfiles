@@ -21,14 +21,11 @@ function main() {
 	ln -sf "${PROGDIR}/.gitconfig" "${HOME}/.gitconfig"
 	mkdir -pv "${WORKSPACE}"
 
-	mkdir -p "${HOME}/Library/Application Support/Spectacle"
-	cp -f "${PROGDIR}/spectacle.json" "${HOME}/Library/Application Support/Spectacle/Shortcuts.json"
-
 	if [[ ! -d "${HOME}/.config/colorschemes" ]]; then
 		git clone https://github.com/chriskempson/base16-shell.git "${HOME}/.config/colorschemes"
 	fi
 
-	pip3 install --upgrade pip
+	pip3 install --upgrade pip --user
 	pip3 install neovim
 	curl -fLo "${HOME}/.local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	mkdir -p "${HOME}/.config/nvim"
